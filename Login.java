@@ -52,8 +52,6 @@ public class Login extends JFrame implements ActionListener {
         b1.addActionListener(this);
         add(b1);
 
-
-
         b2 = new JButton("Cancel");
         b2.setBounds(180,140,120,30);
         b2.setFont(new Font("serif",Font.BOLD,15));
@@ -67,9 +65,7 @@ public class Login extends JFrame implements ActionListener {
         setLocation(400,270);
         setLayout(null);
         setVisible(true);
-
     }
-
 
     @Override
     public void actionPerformed(ActionEvent e) {
