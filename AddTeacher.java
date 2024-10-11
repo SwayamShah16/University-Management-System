@@ -134,7 +134,7 @@ public class AddTeacher extends JFrame implements ActionListener {
         Department.setFont(new Font("serif",Font.BOLD,20));
         add(Department);
 
-        String department[] = {"Computer","Electronics","Mechanical","Civil","IT","AI&ML","Data Structure"};
+        String department[] = {"Computer","Electronics","Mechanical","Civil","IT","AI&ML","Data Science"};
         departmentBox = new JComboBox(department);
         departmentBox.setBounds(600,400,150,30);
         departmentBox.setBackground(Color.WHITE);
