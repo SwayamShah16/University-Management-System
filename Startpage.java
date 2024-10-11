@@ -3,9 +3,9 @@ package university.management.system;
 import javax.swing.*;
 import java.awt.*;
 
-public class Splash extends JFrame implements Runnable {
+public class Startpage extends JFrame implements Runnable {
     Thread t;
-    Splash(){
+    Startpage(){
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Icons/first.png"));
         Image i2 = i1.getImage().getScaledInstance(1000,700,Image.SCALE_DEFAULT);
@@ -42,6 +42,6 @@ public class Splash extends JFrame implements Runnable {
     }
 
     public static void main(String[] args) {
-        new Splash();
+        new Startpage();
     }
 }
