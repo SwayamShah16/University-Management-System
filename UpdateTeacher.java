@@ -235,11 +235,12 @@ public class UpdateTeacher extends JFrame implements ActionListener {
             String address = textAddress.getText();
             String phone = textPhone.getText();
             String email = textemail.getText();
+            String Aadhar=textAadhar.getText();
             String course = textcourse.getText();
             String branch = textbranch.getText();
 
             try {
-                String Q = "update teacher set address = '"+address+"', phone = '"+phone+"', email = '"+email+"', education = '"+course+"', department = '"+branch+"' where empId = '"+empid+"'";
+                String Q = "update teacher set address = '"+address+"', phone = '"+phone+"', email = '"+email+"',Aadhar='"+Aadhar+"', education = '"+course+"', department = '"+branch+"' where empId = '"+empid+"'";
                 Database d = new Database();
                 d.statement.executeUpdate(Q);
 
