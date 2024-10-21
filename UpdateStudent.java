@@ -231,11 +231,12 @@ public class UpdateStudent extends JFrame implements ActionListener {
             String address = textAddress.getText();
             String phone = textPhone.getText();
             String email = textemail.getText();
+            String Aadhar =textAadhar.gettext();
             String course = textcourse.getText();
             String department = textbranch.getText();
 
             try {
-                String Q = "update student1 set address = '"+address+"', phone = '"+phone+"', email = '"+email+"', course = '"+course+"', department = '"+department+"' where empID = '"+empid+"'";
+                String Q = "update student1 set address = '"+address+"', phone = '"+phone+"', email = '"+email+"',Aadhar ='"+Aadhar+"', course = '"+course+"', department = '"+department+"' where empID = '"+empid+"'";
                 Database d = new Database();
                 d.statement.executeUpdate(Q);
 
